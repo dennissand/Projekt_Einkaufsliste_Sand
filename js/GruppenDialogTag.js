@@ -23,7 +23,7 @@ class GruppenDialogTag extends React.Component {
 
     
     /**
-     * Das hinzufügen der Gruppe als Funktion
+     * Das Hinzufügen der Gruppe als Funktion
      */
     gruppeHinzufuegen = () => {
         let eingabe = document.getElementById("Gruppeneingabe")
@@ -37,7 +37,7 @@ class GruppenDialogTag extends React.Component {
     }
     
     /**
-     *Das löschen wird über den vergleich der GruppenListen und id ausgeführt
+     *Das Löschen wird über den vergleich der GruppenListen und id ausgeführt
      * @param id
      */
     gruppeEntfernen = (id) => {
@@ -46,7 +46,7 @@ class GruppenDialogTag extends React.Component {
     }
     
     /**
-     *hier wird id und name gesetztin der Gruppe
+     * hier wird id und name gesetzt in der Gruppe
      * @param id
      * @param name
      */

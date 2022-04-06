@@ -1,5 +1,5 @@
 /**
- * Die Komponente Gruppe beinhaltet die Funktionen der Artikel
+ * Die Klasse Gruppe beinhaltet die Funktionen der Artikel
  */
 class Gruppe {
     static gruppenCounter = 1
@@ -65,7 +65,7 @@ class Gruppe {
     }
 
     /**
-     * 
+     * diese Funktion addiert die Mengen
      * @param artikelobjekt
      * @param neueMenge
      */

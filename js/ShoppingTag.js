@@ -40,7 +40,7 @@ class ShoppingTag extends React.Component {
     }
 
     /**
-     *
+     * bestimmt die Aktive Gruppe der zu kaufenden Artikel
      * @param {gruppenID}
      */
     setAktivGruppe = (gruppenID) => {
@@ -76,7 +76,7 @@ class ShoppingTag extends React.Component {
     }
 
     /**
-     *mit dieser Funktion wird die menge als Zahl hinzugefügt
+     *mit dieser Funktion wird die Menge als Zahl hinzugefügt
      */
     mengeErhoehen = () => {
         this.setState({menge: this.state.menge + 1})
