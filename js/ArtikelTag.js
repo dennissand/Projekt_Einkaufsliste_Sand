@@ -58,7 +58,7 @@ class ArtikelTag extends React.Component {
                 <i className="material-icons"
                    onClick={() => this.setState({isEditing: true})}>edit </i>
                 <i className="material-icons"
-                   onClick={() => this.props.deleteHandler(artikel.name)}>delete </i>
+                   onClick={() => this.props.deleteHandler(artikel.name)}>delete_forever </i>
             </dd>
         )
 

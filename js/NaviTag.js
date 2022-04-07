@@ -11,13 +11,10 @@ class NaviTag extends React.Component {
 
     render() {
         return (
-            <nav className="navi">
-                <button onClick={this.props.gruppenDialogOpen}>
-                    <span className="material-icons">bookmark_add</span>
-                    <span className="mdc-button__ripple"></span>
-                    Gruppen
-                </button>
-
+            <nav className="navibutton">
+                <button className="navi"
+                        onClick={this.props.gruppenDialogOpen}
+                >Gruppen bearbeiten</button>
             </nav>)
     }
 }

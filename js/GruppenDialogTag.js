@@ -1,6 +1,6 @@
 /**
  * Es werden die Funktionen aufgezeigt, die man benutzten kann wenn die Gruppen bearbeitet werden, genutzt wird.
-  */
+ */
 
 
 class GruppenDialogTag extends React.Component {
@@ -9,7 +9,7 @@ class GruppenDialogTag extends React.Component {
         super(props);
         /**
          *
-         * @type 
+         * @type
          * {showDialog}: *,
          * {gruppenListe}: ([]|*),
          * {editID}: null,
@@ -21,9 +21,9 @@ class GruppenDialogTag extends React.Component {
         }
     }
 
-    
+
     /**
-     * Das Hinzufügen der Gruppe als Funktion
+     * Das hinzufügen der Gruppe als Funktion
      */
     gruppeHinzufuegen = () => {
         let eingabe = document.getElementById("Gruppeneingabe")
@@ -35,18 +35,18 @@ class GruppenDialogTag extends React.Component {
         eingabe.value = ""
         eingabe.focus()
     }
-    
+
     /**
-     *Das Löschen wird über den vergleich der GruppenListen und id ausgeführt
+     *Das löschen wird über den vergleich der GruppenListen und id ausgeführt
      * @param id
      */
     gruppeEntfernen = (id) => {
         App.gruppeEntfernen(id)
         this.setState({gruppenListe: App.gruppenListe})
     }
-    
+
     /**
-     * hier wird id und name gesetzt in der Gruppe
+     *hier wird id und name gesetztin der Gruppe
      * @param id
      * @param name
      */
@@ -54,7 +54,7 @@ class GruppenDialogTag extends React.Component {
         this.setState({editID: id})
         this.setState({editName: name})
     }
-    
+
     /**
      * Gruppe wird dort über id und name umbenannt
      */
@@ -62,7 +62,7 @@ class GruppenDialogTag extends React.Component {
         App.gruppeUmbenennen(this.state.editID, this.state.editName)
         this.setState({editID: null})
     }
-    
+
     /**
      * hier wird der neue Name der Gruppe aus dem Textfeld direkt ausgelesen
      * @param e
@@ -82,9 +82,9 @@ class GruppenDialogTag extends React.Component {
                 <div className="mdc-dialog__surface">
                     <h2 className="mdc-dialog__title">Gruppen bearbeiten</h2>
                     <div className="mcd-dialog__content">
-                        <label htmlFor="Gruppe"><input type="text" id="Gruppeneingabe" placeholder="Gruppe hinzufügen"
-                                                       autoComplete="on"/></label>
-                        <button onClick={this.gruppeHinzufuegen}> +</button>
+                        <div className="gruppenfeld"> <label htmlFor="Gruppe"><input type="text" id="Gruppeneingabe" placeholder="Gruppe hinzufügen"
+                                                                                     autoComplete="on"/></label>
+                            <button onClick={this.gruppeHinzufuegen}> +</button></div>
                         <hr/>
                         <dl className="mdc-deprecated-list">
                             {App.gruppenListe.map(gruppe => {
@@ -92,8 +92,8 @@ class GruppenDialogTag extends React.Component {
                                 return (
                                     <dt key={gruppe.id} className="popup">
                                         {this.state.editID === gruppe.id ? <input type="text" id="Eingabefeld"
-                                                                                 value={this.state.editName}
-                                                                                 onChange={this.handelEditChange}/> :
+                                                                                  value={this.state.editName}
+                                                                                  onChange={this.handelEditChange}/> :
                                             <span>{gruppe.name}</span>}
                                         {this.state.editID === gruppe.id ?
                                             /**
@@ -104,7 +104,7 @@ class GruppenDialogTag extends React.Component {
                                             <i onClick={() => this.gruppeBearbeiten(gruppe.id, gruppe.name)}
                                                className="material-icons">edit</i>}
                                         <i onClick={() => this.gruppeEntfernen(gruppe.id)}
-                                           className="material-icons">delete</i>
+                                           className="material-icons">delete_forever</i>
 
                                     </dt>
 
