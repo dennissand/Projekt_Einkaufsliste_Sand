@@ -8,6 +8,13 @@ body {
     background-position: center ;
 }
 
+#container {
+    opacity: 80%;
+    width: 96%;
+    margin: auto;
+}
+
+
 dt {
     font-family: 'Popcorn Mountain Std', regular;
     color: black;
