@@ -20,7 +20,8 @@ und zu guter letzt meiner Frau Nicole Sand, und meinen beiden Kids, Severin & Fr
 
 Online: https://dennissand.github.io/Projekt_Einkaufsliste_Sand/
 
-
+<img src="./img/image0 (1).png"/>
+<img src="./img/image1.png"/>
 
 
 
