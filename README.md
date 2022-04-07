@@ -18,6 +18,10 @@ Tobias Zoghaib (Tutor)
 
 und zu guter letzt meiner Frau Nicole Sand, und meinen beiden Kids, Severin & Frieda
 
+Online: https://dennissand.github.io/Projekt_Einkaufsliste_Sand/
+
+
+
 
 
 
