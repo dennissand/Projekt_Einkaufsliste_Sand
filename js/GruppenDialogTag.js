@@ -16,7 +16,8 @@ class GruppenDialogTag extends React.Component {
          * {editName}: string
          */
         this.state = {
-            showDialog: this.props.visible, gruppenListe: this.props.gruppenListe,
+            showDialog: this.props.visible,
+            gruppenListe: this.props.gruppenListe,
             editID: null, editName: ""
         }
     }
